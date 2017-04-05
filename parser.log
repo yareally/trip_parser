@@ -1,0 +1,11 @@
+2017-04-05 17:12:41,307 - parser - ERROR - Exception while parsing input: __init__() missing 1 required positional argument: 'distance'
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\code\trip_parser\trip_parser\trip_parser.py", line 27, in parse_input
+    drivers[driver_name].add_trip(Trip(*data))
+TypeError: __init__() missing 1 required positional argument: 'distance'
+2017-04-05 17:13:49,650 - parser - ERROR - Exception while parsing input: __init__() missing 1 required positional argument: 'distance'
+Traceback (most recent call last):
+  File "C:\Users\admin\Documents\code\trip_parser\trip_parser\trip_parser.py", line 27, in parse_input
+    drivers[driver_name].add_trip(Trip(*data))
+TypeError: __init__() missing 1 required positional argument: 'distance'
+2017-04-05 17:16:06,874 - parser - ERROR - Exception while parsing input: __init__() missing 1 required positional argument: 'distance'

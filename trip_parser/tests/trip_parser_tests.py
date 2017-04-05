@@ -10,7 +10,6 @@ __author__ = 'Wes Lanning'
 class TripParserTests(unittest.TestCase):
 
     def setUp(self):
-        """"""
         self.driver1 = Driver('John')
         self.driver2 = Driver('Paul')
         self.driver3 = Driver('Ringo')
@@ -34,7 +33,7 @@ class TripParserTests(unittest.TestCase):
         self.assertEquals(100, self.driver3.total_distance)
 
         output = output_results([self.driver1, self.driver2, self.driver3])
-        print(output)
+
         self.assertIn('John: 105 miles @ 47 mph', output)
         self.assertIn('Paul: 2 miles @ 19 mph', output)
         self.assertIn('Ringo: 100 miles @ 100 mph', output)

@@ -1,8 +1,11 @@
 # coding=utf-8
+
+import sys
 import unittest
 from typing import List
-from trip_parser.models import *
-from trip_parser.parser import *
+sys.path.insert(0, '..')
+from trip_parser import *
+
 
 __author__ = 'Wes Lanning'
 

@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # coding=utf-8
 from typing import List
-from trip_parser.models import *
-from trip_parser.parser import *
+from trip_parser import *
+
 
 __author__ = 'Wes Lanning'
 

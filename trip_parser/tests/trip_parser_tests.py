@@ -1,11 +1,7 @@
 # coding=utf-8
 
-import sys
 import unittest
-from typing import List
-sys.path.insert(0, '..')
-from trip_parser import *
-
+from trip_parser import Driver, Trip, output_results
 
 __author__ = 'Wes Lanning'
 

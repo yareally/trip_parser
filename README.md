@@ -8,11 +8,11 @@ config.ini is set up to handle log related options
 
 ## Using the Parser
 ./main.py input.txt
-python3 main.py input.txt
+python main.py input.txt
 cat input.txt | python3 main.py
 
 ## Running unit tests
-python3 trip_parser_tests.py
+python.exe -m trip_parser.tests.trip_parser_tests
 
 ## Assumptions
   * Using Python 3.6+. Anything older will not work due to 3.6+ features (strict type checking)

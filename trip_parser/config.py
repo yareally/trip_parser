@@ -1,11 +1,18 @@
 # coding=utf-8
-import logging
+import logging, sys, os
 from configparser import ConfigParser
 
 __author__ = 'Wes Lanning'
 
+
+ROOT_DIR = os.path.abspath(os.path.join(os.path.abspath(__file__), os.pardir))
 config = ConfigParser()
-config.read('config.ini')
+
+CONFIG_PATH = os.path.join(os.path.abspath(os.path.join(ROOT_DIR, os.pardir)), 'config.ini')
+config.read(CONFIG_PATH)
+
+if not config.sections():
+    print('WARNING: No sections in ini file!')
 
 # log stuff for the module
 LOGGER_NAME = config['logging']['name']

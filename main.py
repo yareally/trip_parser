@@ -19,4 +19,4 @@ __author__ = 'Wes Lanning'
 
 if __name__ == '__main__':
     drivers: List[Driver] = list(parse_input().values())
-    output_results(drivers)
+    print(output_results(drivers))

@@ -33,7 +33,7 @@ def parse_input() -> Dict[str, Driver]:
     return drivers
 
 
-def output_results(drivers: List[Driver], units_of_measure=('miles', 'mph')):
+def output_results(drivers: List[Driver], units_of_measure=('miles', 'mph')) -> str:
     """
     Dumps aggregated results for each driver to stdout
 
@@ -41,8 +41,11 @@ def output_results(drivers: List[Driver], units_of_measure=('miles', 'mph')):
     :param units_of_measure: appends the given unit measure type
     """
     heapq.heapify(drivers)
+    output = ''
 
     for driver in drivers:
-        output = f'{driver.name}: {driver.total_distance} {units_of_measure[0]}'
+        output += f'{driver.name}: {driver.total_distance} {units_of_measure[0]}'
         output += f' @ {driver.average_speed} {units_of_measure[1]}' if driver.average_speed else ''
-        print(output)
+        output += '\n'
+
+    return output

@@ -15,11 +15,10 @@ def parse_input() -> Dict[str, Driver]:
 
     :return: a dictionary mapping drivers to their trips
     """
-    lines: List[str] = [line.rstrip('\n') for line in fileinput.input()]
     drivers: Dict[str, Driver] = {}
 
-    for line in lines:
-        cmd, *tail = line.split(' ')
+    for line in fileinput.input():
+        cmd, *tail = line.rstrip('\n').split(' ')
         driver_name, *data = tail
 
         try:
